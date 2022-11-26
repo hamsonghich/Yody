@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --color-bg-pink: #fef1d8;
+  --color-text-blue: #11006f;
+  --color-text-yellow: #fcaf17;
+  --color-text-red: #cd151c;
+  --color-text-title-blue: #7a7a9d;
+  --color-toast-orange: #ee4d2d;
+  --color-toast-red: #dd011b;
+  --color-toast-green: #089e29;
+  --color-toast-yellow: #fcaf17;
+  --color-toast-blue: #22215b;
+  --color-bg-footer: #2a2a86;
+}
+@font-face {
+  font-family: mainFont;
+  src: url(assets/Font_Gilro_VH_Full/SVN-Gilroy-Regular.otf);
+}
+@for $i from 0 through 100 {
+  .fz-#{$i}{
+    font-size: $i + px;
+  }
+}

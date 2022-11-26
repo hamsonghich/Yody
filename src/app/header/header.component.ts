@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FirebaseService} from '../services/firebase.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public firebaseServices: FirebaseService) { }
 
   ngOnInit(): void {
+    this.firebaseServices.readFunctionalityObject('/logo').subscribe((res: any) => {
+      console.log(res);
+    })
   }
 
 }

@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyBJ1a_1hbdNU1AOlJe61JNEEm85LQ0hM5I",
+    authDomain: "yody-20067.firebaseapp.com",
+    databaseURL: 'https://yody-20067-default-rtdb.asia-southeast1.firebasedatabase.app',
+    projectId: "yody-20067",
+    storageBucket: "yody-20067.appspot.com",
+    messagingSenderId: "307871298718",
+    appId: "1:307871298718:web:f3ff1755069ea48358f78f",
+    measurementId: "G-L06CBLT56Z"
+  }
 };
 
 /*
