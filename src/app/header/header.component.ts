@@ -7,12 +7,13 @@ import {FirebaseService} from '../services/firebase.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  public linkLogo = '';
   constructor(public firebaseServices: FirebaseService) { }
 
   ngOnInit(): void {
     this.firebaseServices.readFunctionalityObject('/logo').subscribe((res: any) => {
       console.log(res);
+      this.linkLogo = res;
     })
   }
 
