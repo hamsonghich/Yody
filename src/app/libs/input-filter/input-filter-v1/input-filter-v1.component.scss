@@ -1,0 +1,90 @@
+::ng-deep mat-icon{
+  background-color: var(--color-text-yellow);
+  color: white;
+  height: 100%;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 200%;
+}
+::ng-deep button.mat-focus-indicator.mat-icon-button.mat-button-base{
+  background: var(--color-text-yellow);
+  border-radius: 0 10px 10px 0;
+  width: 100px!important;
+  height: 100% !important;
+}
+::ng-deep .mat-form-field-suffix.ng-star-inserted{
+  top: 0.25em;
+  position: absolute;
+  right: 0; border-radius: 10px;
+  height: calc(100% - 0.25em);
+  background: var(--color-text-yellow);
+}
+::ng-deep mat-form-field.example-full-width{
+  min-width: 500px;
+  border-radius: 10px;
+}
+
+/* width */
+::ng-deep ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::ng-deep ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::ng-deep ::-webkit-scrollbar-thumb {
+  background: var( --color-text-title-blue);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::ng-deep ::-webkit-scrollbar-thumb:hover {
+  background:  var( --color-text-title-blue);
+}
+
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+  color: var(--color-text-yellow);
+}
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: var(--color-text-yellow);
+  // opacity: 1!important;
+}
+
+//mat-input focused color
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: var(--color-text-yellow);
+}
+
+// mat-input error outline color
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+  color: var(--color-text-red)!important;
+  opacity: 0.8!important;
+}
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+  color: var(--color-text-yellow);
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: var(--color-text-yellow);
+}
+
+// mat-label error style
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: var(--color-text-red)!important;
+}
+::ng-deep .mat-form-field-outline-start {
+  border-radius: 10px 0 0 10px !important;
+  min-width: 10px !important;
+}
+
+::ng-deep .mat-form-field-outline-end {
+  border-radius: 0 10px 10px 0 !important;
+}

@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HeaderModule} from './header/header.module';
 import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ClientModule} from './client/client.module';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,9 @@ import {environment} from '../environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeaderModule,
+    ClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row banner-img">
+    <div class="d-none d-lg-block">
+      <a href="/">
+        <img [src]="this.bannerDes" alt="">
+      </a>
+    </div>
+    <div class="d-block d-lg-none">
+      <img [src]="this.bannerMb" alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="search-box">
+        <div class="logo">
+          <img src="{{this.linkLogo}}" alt="">
+        </div>
+        <div class="">
+
+          <app-input-filter-v1
+            [listOptions]="filteredOptions"
+            [fg]="formSearch"
+            [controlName]="'searchControlName'"
+            [placeholder]="'Nhập nội dung tìm kiếm ...'"
+            [label]="'Tìm kiếm ...'"
+            (dataEmitter)="getValueSearch($event)"
+          ></app-input-filter-v1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

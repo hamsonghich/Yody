@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
-
+  public keyContent: String | any;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showTabContent(keyContent: string){
+    this.keyContent = keyContent;
   }
 
 }

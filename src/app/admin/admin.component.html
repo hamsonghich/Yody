@@ -1,1 +1,17 @@
-<p>admin works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <ul>
+        <li (click)="showTabContent('account')">Account manager</li>
+        <li (click)="showTabContent('news')">Tin Tuc</li>
+        <li (click)="showTabContent('contacts')">Lien he</li>
+        <li (click)="showTabContent('products')">San pham</li>
+      </ul>
+    </div>
+
+    <div class="col-8">
+      <app-ui-admin [key]="this.keyContent"></app-ui-admin>
+    </div>
+  </div>
+
+</div>

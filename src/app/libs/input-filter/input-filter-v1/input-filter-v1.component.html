@@ -1,0 +1,20 @@
+<form class="example-form">
+  <mat-form-field [formGroup]="fg" class="example-full-width" appearance="outline">
+    <mat-label>{{this.label}}</mat-label>
+    <input type="text"
+           (ngModelChange)="onChangeSelection()"
+           (blur)="checkBlur()"
+           placeholder="{{this.placeholder}}"
+           matInput
+           [formControl]="control"
+           [matAutocomplete]="auto">
+    <button matSuffix mat-icon-button aria-label="Clear" (click)="onChangeSelection()">
+      <mat-icon>search</mat-icon>
+    </button>
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value">
+        {{option.viewValue}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
